@@ -175,7 +175,7 @@ export default function Dashboard() {
         <h1 className="text-3xl font-bold mb-6 text-center">NYC Budget Dashboard</h1>
         
         {/* Salary Calculator Card */}
-        <Card className="mb-6 bg-gray-900 border-gray-800">
+        <Card className="mb-6 bg-black border-gray-800">
           <CardHeader>
             <CardTitle className="text-xl text-white">Salary Calculator</CardTitle>
           </CardHeader>
@@ -187,7 +187,7 @@ export default function Dashboard() {
               value={grossSalary}
               onChange={handleSalaryChange}
               placeholder="Enter your gross annual salary"
-              className="bg-gray-800 text-white border-gray-700 mt-1 mb-4"
+              className="bg-black text-white border-gray-700 mt-1 mb-4"
             />
             <div className="flex items-center space-x-2 mt-4 mb-2">
               <Switch
@@ -204,7 +204,7 @@ export default function Dashboard() {
         </Card>
 
         {/* Rent Calculator Card */}
-        <Card className="mb-6 bg-gray-900 border-gray-800">
+        <Card className="mb-6 bg-black border-gray-800">
           <CardHeader>
             <CardTitle className="text-xl text-white">Rent Calculator</CardTitle>
           </CardHeader>
@@ -217,7 +217,7 @@ export default function Dashboard() {
                 value={rent}
                 onChange={handleRentChange}
                 placeholder="Enter your monthly rent"
-                className="bg-gray-800 text-white border-gray-700 mt-1"
+                className="bg-black text-white border-gray-700 mt-1"
               />
             </div>
             <div className="flex items-center space-x-2 mb-4">
@@ -240,7 +240,7 @@ export default function Dashboard() {
         </Card>
 
         {/* Other Expenses Card */}
-        <Card className="mb-6 bg-gray-900 border-gray-800">
+        <Card className="mb-6 bg-black border-gray-800">
           <CardHeader>
             <CardTitle className="text-xl text-white">Other Expenses</CardTitle>
           </CardHeader>
@@ -252,21 +252,21 @@ export default function Dashboard() {
                     placeholder="Expense name"
                     value={expense.name}
                     onChange={(e) => updateExpense(expense.id, 'name', e.target.value)}
-                    className="w-1/4 bg-gray-800 text-white border-gray-700"
+                    className="w-1/4 bg-black text-white border-gray-700"
                   />
                   <Input
                     type="number"
                     placeholder="Amount ($)"
                     value={expense.amount}
                     onChange={(e) => updateExpense(expense.id, 'amount', e.target.value)}
-                    className="w-1/4 bg-gray-800 text-white border-gray-700"
+                    className="w-1/4 bg-black text-white border-gray-700"
                   />
                   <Input
                     type="number"
                     placeholder="Percentage (%)"
                     value={expense.percentage}
                     onChange={(e) => updateExpense(expense.id, 'percentage', e.target.value)}
-                    className="w-1/4 bg-gray-800 text-white border-gray-700"
+                    className="w-1/4 bg-black text-white border-gray-700"
                   />
                   <div className="flex items-center space-x-2">
                     <Switch
@@ -289,7 +289,7 @@ export default function Dashboard() {
         </Card>
 
         {/* Expense Breakdown Chart */}
-        <Card className="mb-6 bg-gray-900 border-gray-800">
+        <Card className="mb-6 bg-black border-gray-800">
           <CardHeader>
             <CardTitle className="text-xl text-white">Expense Breakdown</CardTitle>
           </CardHeader>
