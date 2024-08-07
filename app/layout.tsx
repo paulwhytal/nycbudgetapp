@@ -1,5 +1,10 @@
-import Link from 'next/link'
 import './globals.css'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'NYC Budget Planner',
+  description: 'Plan your NYC budget with our interactive tool',
+}
 
 export default function RootLayout({
   children,
@@ -8,28 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
-        <nav className="p-4 bg-black">
-          <ul className="flex space-x-4 justify-center">
-            <li>
-              <Link href="/" className="hover:text-gray-300">Home</Link>
-            </li>
-            <li>
-              <Link href="/dashboard" className="hover:text-gray-300">Dashboard</Link>
-            </li>
-            <li>
-              <Link href="/budget" className="hover:text-gray-300">Budget</Link>
-            </li>
-            <li>
-              <Link href="/projections" className="hover:text-gray-300">Projections</Link>
-            </li>
-            <li>
-              <Link href="/calculators" className="hover:text-gray-300">Calculators</Link>
-            </li>
-          </ul>
-        </nav>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
