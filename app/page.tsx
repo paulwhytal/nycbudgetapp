@@ -9,6 +9,7 @@ import { Switch } from "../components/ui/switch"
 import { Button } from "../components/ui/button"
 import { Pie } from 'react-chartjs-2'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import Image from 'next/image';
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
@@ -172,7 +173,16 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-black text-white p-4">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold mb-6 text-center">NYC Budget Calculator</h1>
+        {/* Logo Header */}
+        <div className="flex justify-center mb-6">
+          <Image
+            src="/images/budgetme-nyc-logo.png"
+            alt="BudgetMe NYC Logo"
+            width={200}
+            height={200}
+            priority
+          />
+        </div>
         
         {/* Salary Calculator Card */}
         <Card className="mb-6 bg-black border-gray-800">
